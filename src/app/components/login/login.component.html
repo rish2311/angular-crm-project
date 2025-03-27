@@ -1,0 +1,76 @@
+<div class="wrapper">
+  <div class="form-container">
+    <div class="admin-header">
+      <div class="admin-logo-container">
+        <img src="https://static.vecteezy.com/system/resources/previews/016/623/813/original/phoenix-logo-simple-tribal-abstract-silhouette-bird-head-design-element-free-vector.jpg" alt="admin-logo">
+      </div>
+      <div class="admin-logo-name">Untitled UI</div>
+    </div>
+    <div class="category-subcontainer">
+      <div class="form-heading">Sign in as</div>
+      <div class="category-options">
+        <input type="radio" id="superadmin" name="category" class="category-input" data-category ="1" checked>
+        <label for="superadmin" class="category-option">Superadmin</label>
+        <input type="radio" id="manager" name="category" class="category-input" data-category ="2">
+        <label for="manager" class="category-option">Manager</label>
+        <input type="radio" id="associate" name="category" class="category-input" data-category ="3">
+        <label for="associate" class="category-option">Associate</label>
+      </div>
+    </div>
+    <div class="form-input-container">
+      <div class="form-subcontainer">
+        <label for="usr-nme" class="form-label">EmailId:
+        <svg viewBox="0 0 24 24" fill="none" class='profile-svg'>
+          <circle cx="12" cy="6" r="4" stroke="var(--grey-color)" stroke-width="2"></circle> 
+          <path d="M20 17.5C20 19.9853 20 22 12 22C4 22 4 19.9853 4 17.5C4 15.0147 7.58172 13 12 13C16.4183 13 20 15.0147 20 17.5Z" stroke="var(--grey-color)" stroke-width="2"></path>
+        </svg></label>
+        <input type="text" [(ngModel)]="apiLoginObj.EmailId" id="usr-nme" name="usrnme" class="form-input" placeholder="Enter your Email...">
+        <div class='error-msg'>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#ff0000">
+            <path d="M12 16H12.01M12 8V12M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <span></span>
+        </div>
+      </div>
+      <div class="form-subcontainer">
+        <label for="usr-passwrd" class="form-label passwrd-label">Password:
+        <svg viewBox="0 0 24 24" fill="none" class='lock-svg'>
+          <path d="M12 14.5V16.5M7 10.0288C7.47142 10 8.05259 10 8.8 10H15.2C15.9474 10 16.5286 10 17 10.0288M7 10.0288C6.41168 10.0647 5.99429 10.1455 5.63803 10.327C5.07354 10.6146 4.6146 11.0735 4.32698 11.638C4 12.2798 4 13.1198 4 14.8V16.2C4 17.8802 4 18.7202 4.32698 19.362C4.6146 19.9265 5.07354 20.3854 5.63803 20.673C6.27976 21 7.11984 21 8.8 21H15.2C16.8802 21 17.7202 21 18.362 20.673C18.9265 20.3854 19.3854 19.9265 19.673 19.362C20 18.7202 20 17.8802 20 16.2V14.8C20 13.1198 20 12.2798 19.673 11.638C19.3854 11.0735 18.9265 10.6146 18.362 10.327C18.0057 10.1455 17.5883 10.0647 17 10.0288M7 10.0288V8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8V10.0288" stroke="var(--grey-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg></label>
+        <input type="password" [(ngModel)]="apiLoginObj.password" id="usr-passwrd" name="passwrd" class="form-input" placeholder="••••••••">
+        <span class="passwrd-svgs">
+          <svg xmlns="http://www.w3.org/2000/svg" class="passwrd-close-svg" viewBox="0 0 24 24">
+            <path fill="var(--grey-color)" fill-rule="evenodd" d="M1.606 6.08a1 1 0 0 1 1.313.526L2 7l.92-.394v-.001l.003.009l.021.045l.094.194c.086.172.219.424.4.729a13.4 13.4 0 0 0 1.67 2.237a12 12 0 0 0 .59.592C7.18 11.8 9.251 13 12 13a8.7 8.7 0 0 0 3.22-.602c1.227-.483 2.254-1.21 3.096-1.998a13 13 0 0 0 2.733-3.725l.027-.058l.005-.011a1 1 0 0 1 1.838.788L22 7l.92.394l-.003.005l-.004.008l-.011.026l-.04.087a14 14 0 0 1-.741 1.348a15.4 15.4 0 0 1-1.711 2.256l.797.797a1 1 0 0 1-1.414 1.415l-.84-.84a12 12 0 0 1-1.897 1.256l.782 1.202a1 1 0 1 1-1.676 1.091l-.986-1.514c-.679.208-1.404.355-2.176.424V16.5a1 1 0 0 1-2 0v-1.544c-.775-.07-1.5-.217-2.177-.425l-.985 1.514a1 1 0 0 1-1.676-1.09l.782-1.203c-.7-.37-1.332-.8-1.897-1.257l-.84.84a1 1 0 0 1-1.414-1.414l.797-.797a15.4 15.4 0 0 1-1.87-2.519a14 14 0 0 1-.591-1.107l-.033-.072l-.01-.021l-.002-.007l-.001-.002v-.001C1.08 7.395 1.08 7.394 2 7l-.919.395a1 1 0 0 1 .525-1.314" clip-rule="evenodd"></path>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="passwrd-open-svg" viewBox="0 0 24 24">
+            <path fill="var(--grey-color)" d="M9.75 12a2.25 2.25 0 1 1 4.5 0a2.25 2.25 0 0 1-4.5 0"></path>
+            <path fill="var(--grey-color)" fill-rule="evenodd" d="M2 12c0 1.64.425 2.191 1.275 3.296C4.972 17.5 7.818 20 12 20s7.028-2.5 8.725-4.704C21.575 14.192 22 13.639 22 12c0-1.64-.425-2.191-1.275-3.296C19.028 6.5 16.182 4 12 4S4.972 6.5 3.275 8.704C2.425 9.81 2 10.361 2 12m10-3.75a3.75 3.75 0 1 0 0 7.5a3.75 3.75 0 0 0 0-7.5" clip-rule="evenodd"></path>
+          </svg>
+        </span>
+        <div class='error-msg'>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#ff0000">
+            <path d="M12 16H12.01M12 8V12M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <span></span>
+        </div>
+      </div>
+      <button class="submit-button" (click)="onLogin()" id="user-login-submit">Sign in</button>
+    </div>
+    <div class="admin-footer">Copyright © 2025 - untitledui.com</div>
+  </div>
+  <div class='alert-popup'>
+    <svg viewBox="0 0 32 32" fill="#dc2626" class='alert-cross-svg'>
+      <g transform="translate(-570.000000, -1089.000000)" fill="#dc2626"> 
+      <path d="M591.657,1109.24 C592.048,1109.63 592.048,1110.27 591.657,1110.66 C591.267,1111.05 590.633,1111.05 590.242,1110.66 L586.006,1106.42 L581.74,1110.69 C581.346,1111.08 580.708,1111.08 580.314,1110.69 C579.921,1110.29 579.921,1109.65 580.314,1109.26 L584.58,1104.99 L580.344,1100.76 C579.953,1100.37 579.953,1099.73 580.344,1099.34 C580.733,1098.95 581.367,1098.95 581.758,1099.34 L585.994,1103.58 L590.292,1099.28 C590.686,1098.89 591.323,1098.89 591.717,1099.28 C592.11,1099.68 592.11,1100.31 591.717,1100.71 L587.42,1105.01 L591.657,1109.24 L591.657,1109.24 Z M586,1089 C577.163,1089 570,1096.16 570,1105 C570,1113.84 577.163,1121 586,1121 C594.837,1121 602,1113.84 602,1105 C602,1096.16 594.837,1089 586,1089 L586,1089 Z"> </path>
+      </g>
+    </svg>
+    <div class='alert-content'>
+      <div class='alert-content-heading'>Error</div>
+      <div class='alert-content-msg'></div>
+    </div>
+    <svg viewBox="0 0 24 24" fill="none" class='alert-cls'>
+      <path d="M16 8L8 16M8.00001 8L16 16" stroke="#dc2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      </path>
+    </svg>
+  </div>
+</div>

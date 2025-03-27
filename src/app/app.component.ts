@@ -16,17 +16,19 @@ import { SidebarComponent } from './components/sidebar.component';
       </main>
     </div>
   `,
-  styles: [`
-    .layout-container {
-      display: flex;
-      height: calc(100vh - 70px); /* Adjust based on header height */
-    }
-    .main-content {
-      flex: 1;
-      padding: 1rem;
-      background-color: #ffffff; /* Change as needed */
-      overflow-y: auto;
-    }
-  `]
+  styles: [
+    `
+      .layout-container {
+        display: flex;
+        height: calc(100vh - 70px); /* Adjust based on header height */
+      }
+      .main-content {
+        flex: 1;
+        padding: 1rem;
+        background-color: #ffffff; /* Change as needed */
+        overflow-y: auto;
+      }
+    `,
+  ],
 })
 export class AppComponent {}
