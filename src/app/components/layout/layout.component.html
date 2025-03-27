@@ -1,12 +1,26 @@
-<nav class="sidebar">
-  <ul>
-    <li><a routerLink="/dashboard">Dashboard</a></li>
-    <li><a routerLink="/users">Users</a></li>
-    <li><a routerLink="/products">Products</a></li>
-    <li><a routerLink="/categories">Categories</a></li>
-    <li><a routerLink="/orders">Orders</a></li>
-    <li (click)="onLogoff()"><a routerLink="/login">Logoff</a></li>
+<style>
+  .sidebar-item{
+    background-color: rgb(28, 99, 149);
+    color: white;
+
+    padding: 1rem 2rem;
+    width: 100%;
+    &:hover{
+    background-color: rgb(12, 58, 91);
+    }
+  }
+</style>
+
+<nav class="sidebar bg-blue-300 w-[15%] h-screen flex items-start ">
+  <ul class="flex flex-col w-full items-stretch  mt-[20%]">
+    <li class="sidebar-item"><a routerLink="/dashboard">Dashboard</a></li>
+    <li class="sidebar-item"><a routerLink="/users">Users</a></li>
+    <li class="sidebar-item"><a routerLink="/products">Products</a></li>
+    <li class="sidebar-item"><a routerLink="/categories">Categories</a></li>
+    <li class="sidebar-item"><a routerLink="/orders">Orders</a></li>
+    <li class="sidebar-item" (click)="onLogoff()"><a routerLink="/login">Logoff</a></li>
   </ul>
 </nav>
+
 
 <router-outlet></router-outlet>

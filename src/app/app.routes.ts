@@ -7,15 +7,16 @@ import { authGuard } from './components/guard/auth.guard';
 import { AdminComponent } from './components/admin/admin.component';
 
 export const routes: Routes = [
-  { path: '', component: LoginComponent },
+  
 
   {
     path: '',
     component: LayoutComponent,
-    children: [
-      { path: 'admin', component: AdminComponent, canActivate: [authGuard] },
 
+    children: [
       { path: 'login', component: LoginComponent },
+      { path: 'admin', component: AdminComponent, canActivate: [authGuard] },
+      { path: 'home', component: HomeComponent },
     ],
   },
 ];

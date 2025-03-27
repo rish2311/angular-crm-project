@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header.component';
+
 import { SidebarComponent } from './components/sidebar.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, HeaderComponent, SidebarComponent],
+
   template: `
     <app-header></app-header>
     <div class="layout-container">
@@ -24,7 +26,6 @@ import { SidebarComponent } from './components/sidebar.component';
       }
       .main-content {
         flex: 1;
-        padding: 1rem;
         background-color: #ffffff; /* Change as needed */
         overflow-y: auto;
       }

@@ -1,1 +1,105 @@
-<p>admin works!</p>
+<div class="wrapper">
+  <div class="form-container">
+    <div class="admin-header">
+      <div class="admin-logo-container">
+        <img src="https://static.vecteezy.com/system/resources/previews/016/623/813/original/phoenix-logo-simple-tribal-abstract-silhouette-bird-head-design-element-free-vector.jpg" alt="admin-logo">
+      </div>
+      <div class="admin-logo-name">Untitled UI</div>
+    </div>
+
+    <!-- Name Field -->
+    <div class="form-input-container">
+      <div class="form-subcontainer">
+        <label for="usr-name" class="form-label">Name
+        <svg viewBox="0 0 24 24" fill="none" class='profile-svg'>
+          <circle cx="12" cy="6" r="4" stroke="var(--grey-color)" stroke-width="2"></circle> 
+          <path d="M20 17.5C20 19.9853 20 22 12 22C4 22 4 19.9853 4 17.5C4 15.0147 7.58172 13 12 13C16.4183 13 20 15.0147 20 17.5Z" stroke="var(--grey-color)" stroke-width="2"></path>
+        </svg></label>
+        <input type="text" [(ngModel)]="userCreateObj.name" id="usr-name" name="name" class="form-input" placeholder="Enter your full name...">
+        <div class='error-msg'>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#ff0000">
+            <path d="M12 16H12.01M12 8V12M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Email Field -->
+    <div class="form-input-container">
+      <div class="form-subcontainer">
+        <label for="usr-email" class="form-label">Email
+        <svg viewBox="0 0 24 24" fill="none" class='email-svg'>
+          <path d="M4 7L10.94 11.3375C11.5885 11.7428 12.4115 11.7428 13.06 11.3375L20 7M5 18H19C20.1046 18 21 17.1046 21 16V8C21 6.89543 20.1046 6 19 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18Z" stroke="var(--grey-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg></label>
+        <input type="email" [(ngModel)]="userCreateObj.email" id="usr-email" name="email" class="form-input" placeholder="Enter your email...">
+        <div class='error-msg'>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#ff0000">
+            <path d="M12 16H12.01M12 8V12M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phone Field -->
+    <div class="form-input-container">
+      <div class="form-subcontainer">
+        <label for="usr-phone" class="form-label">Phone
+        <svg viewBox="0 0 24 24" fill="none" class='phone-svg'>
+          <path d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z" stroke="var(--grey-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg></label>
+        <input type="tel" [(ngModel)]="userCreateObj.phone" id="usr-phone" name="phone" class="form-input" placeholder="Enter your phone number...">
+        <div class='error-msg'>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#ff0000">
+            <path d="M12 16H12.01M12 8V12M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Address Field -->
+    <div class="form-input-container">
+      <div class="form-subcontainer">
+        <label for="usr-address" class="form-label">Address
+        <svg viewBox="0 0 24 24" fill="none" class='address-svg'>
+          <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="var(--grey-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M12 21C15 17 19 15.4183 19 10C19 6.13401 15.866 3 12 3C8.13401 3 5 6.13401 5 10C5 15.4183 9 17 12 21Z" stroke="var(--grey-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg></label>
+        <textarea [(ngModel)]="userCreateObj.address" id="usr-address" name="address" class="form-input address-input" placeholder="Enter your full address..."></textarea>
+        <div class='error-msg'>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#ff0000">
+            <path d="M12 16H12.01M12 8V12M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="form-input-container">
+      <button class="submit-button" (click)="onSubmit()" id="user-submit">Create User</button>
+    </div>
+
+    <!-- Footer -->
+    <div class="admin-footer">Copyright © 2025 - untitledui.com</div>
+  </div>
+
+  <!-- Alert Popup -->
+  <div class='alert-popup'>
+    <svg viewBox="0 0 32 32" fill="#dc2626" class='alert-cross-svg'>
+      <g transform="translate(-570.000000, -1089.000000)" fill="#dc2626"> 
+      <path d="M591.657,1109.24 C592.048,1109.63 592.048,1110.27 591.657,1110.66 C591.267,1111.05 590.633,1111.05 590.242,1110.66 L586.006,1106.42 L581.74,1110.69 C581.346,1111.08 580.708,1111.08 580.314,1110.69 C579.921,1110.29 579.921,1109.65 580.314,1109.26 L584.58,1104.99 L580.344,1100.76 C579.953,1100.37 579.953,1099.73 580.344,1099.34 C580.733,1098.95 581.367,1098.95 581.758,1099.34 L585.994,1103.58 L590.292,1099.28 C590.686,1098.89 591.323,1098.89 591.717,1099.28 C592.11,1099.68 592.11,1100.31 591.717,1100.71 L587.42,1105.01 L591.657,1109.24 L591.657,1109.24 Z M586,1089 C577.163,1089 570,1096.16 570,1105 C570,1113.84 577.163,1121 586,1121 C594.837,1121 602,1113.84 602,1105 C602,1096.16 594.837,1089 586,1089 L586,1089 Z"> </path>
+      </g>
+    </svg>
+    <div class='alert-content'>
+      <div class='alert-content-heading'>Error</div>
+      <div class='alert-content-msg'></div>
+    </div>
+    <svg viewBox="0 0 24 24" fill="none" class='alert-cls'>
+      <path d="M16 8L8 16M8.00001 8L16 16" stroke="#dc2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      </path>
+    </svg>
+  </div>
+</div>
